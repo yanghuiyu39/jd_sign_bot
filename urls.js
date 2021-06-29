@@ -45,7 +45,11 @@ async function run() {
   // await sendPost(data, url)
 
   // get 参数，url
-  await sendGet({ id: '1' }, 'http://www.baidu.com')
+  //yhy gpn 签到
+  await sendGet({ id: '1' }, 'https://api.huanyingzq.com/ads/checkin.ashx?packtype=601&version=6.0.0&s=gpn_test&usertoken=jMvtCRVQnOJvevX2hxikMbnVfKzity4ZDti7LyIBqZ_thCrX3M8w5KJ6oHGyIPSe&company=hy')
+  //hgd gpn 签到
+  await sendGet({ id: '1' }, 'https://api.huanyingzq.com/ads/checkin.ashx?packtype=601&version=6.0.0&s=gpn_test&usertoken=HdaH6ZHVddb_u97gUbvDcXrEq5K2A1Sf2JCu8t8XZ5-vxbpJn4FfPxVlciS5BDjf&company=hy')
+
   await sendGet(params, url)
 }
 (async () => {
